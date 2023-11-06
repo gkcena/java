@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class KdvHesaplama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("KDV'siz fiyat= ");
+        double kdvsiz = input.nextDouble();
+        if(kdvsiz>0 && kdvsiz<1000) {
+
+            double kdvli = ((kdvsiz * 18) / 100) + kdvsiz;
+            double kdv = (kdvsiz * 18) / 100;
+
+            System.out.println("KDV'li fiyat= " + kdvli);
+            System.out.println("KDV tutarı= " + kdv);
+        }else {
+
+            double kdvli = ((kdvsiz * 8) / 100) + kdvsiz;
+            double kdv = (kdvsiz * 8) / 100;
+
+            System.out.println("KDV'li fiyat= " + kdvli);
+            System.out.println("KDV tutarı= " + kdv);
+
+        }
+    }
+}
