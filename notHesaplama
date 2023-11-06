@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class notHesaplama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int math, turkish, physics, chemistry, history, music;
+
+        System.out.print("Enter math note: ");
+        math = input.nextInt();
+
+
+        System.out.print("Enter turkish note: ");
+        turkish = input.nextInt();
+
+
+        System.out.print("Enter physics note: ");
+        physics = input.nextInt();
+
+
+        System.out.print("Enter chemistry note: ");
+        chemistry = input.nextInt();
+
+
+        System.out.print("Enter history note: ");
+        history = input.nextInt();
+
+
+        System.out.print("Enter music note: ");
+        music = input.nextInt();
+
+        int total = math + turkish + physics + chemistry + history + music;
+        double avarage = total/6.0;
+        System.out.println(avarage);
+
+        String conclusion = (avarage >= 60) ? "sınıfı geçti" : "sınıfı geçemedi";
+        System.out.println(conclusion);
+
+
+
+    }
+}
