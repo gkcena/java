@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class bmiCalculator {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter your weight(kg): ");
+        double kg = input.nextDouble();
+
+        System.out.print("Please enter your length(m): ");
+        double meter = input.nextDouble();
+
+        double bmi = kg/Math.pow(meter,2);
+
+        System.out.println("Your bmi is " + bmi);
+
+    }
+}
