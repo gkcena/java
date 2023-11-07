@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Greengrocer {
+    public static void main(String[] args){
+         double pear = 2.14, apple = 3.67, tomato = 1.11, banana = 0.95, aubergine = 5.00;
+         Scanner input = new Scanner(System.in);
+
+         System.out.print("How many kilos of pears? ");
+         double pearkg = input.nextDouble();
+
+         System.out.print("How many kilos of apples? ");
+         double applekg = input.nextDouble();
+
+         System.out.print("How many kilos of tomatos? ");
+         double tomatokg = input.nextDouble();
+
+         System.out.print("How many kilos of bananas? ");
+         double bananakg = input.nextDouble();
+
+         System.out.print("How many kilos of aubergines? ");
+         double auberginekg = input.nextDouble();
+
+         double total = (pear * pearkg) + (applekg * apple) + (tomato * tomatokg) + (banana + bananakg) + (aubergine * auberginekg);
+         System.out.println("Total: " + total);
+
+    }
+}
