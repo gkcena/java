@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class circleSegmentArea {
+    public static void main(String[] args) {
+        double area,r,a,pi=3.14;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter r= ");
+        r = input.nextDouble();
+
+        System.out.print("Enter degree= ");
+        a = input.nextDouble();
+
+        area = (pi * Math.pow(r,2) * a) / 360 ;
+
+        System.out.print("Area: " + area);
+
+    }
+}
