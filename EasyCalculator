@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class EasyCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number:");
+        int n1 = input.nextInt();
+
+        System.out.print("Enter second number");
+        int n2 = input.nextInt();
+
+        System.out.println("Please choose operation\n------------------------------------\n1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme\n------------------------------------");
+        int selection = input.nextInt();
+
+        switch (selection){
+            case 1:
+                System.out.println("Result:" + (n1+n2));
+                break;
+            case 2:
+                System.out.println("Result:" + (n1-n2));
+                break;
+            case 3:
+                System.out.println("Result:" + (n1*n2));
+                break;
+            case 4:
+                switch (n2){
+                    case 0:
+                        System.out.println("Any number is not divisible by 0.");
+                        break;
+                    default:
+                        System.out.println("Result:" + (n1/n2));
+                }
+                break;
+            default:
+                System.out.println("please choose current operation");
+
+        }
+
+    }
+}
